@@ -15,8 +15,8 @@ import java.util.List;
 @RequestMapping("/libary")
 public class LibaryController {
 
-    @Autowired
-    private LibaryService libaryService;
+//    @Autowired
+//    private LibaryService libaryService;
 
     @Autowired
     private LibaryRepository libaryRepository;
@@ -32,10 +32,10 @@ public class LibaryController {
     }
 
 
-    @PutMapping("/{id}")
-    public Libary updateBook(@PathVariable("id") Long id, @RequestBody Libary libary) {
-        return this.libaryService.updateBookById(id, libary);
-    }
+//    @PutMapping("/{id}")
+//    public Libary updateBook(@PathVariable("id") Long id, @RequestBody Libary libary) {
+//        return this.libaryService.updateBookById(id, libary);
+//    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Long> deleteBook(@PathVariable("id") Long id) {
